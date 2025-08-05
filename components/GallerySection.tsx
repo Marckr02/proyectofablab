@@ -160,7 +160,7 @@ const GallerySection: React.FC = () => {
                 </div>
                 <p className="text-slate-400 max-w-2xl mx-auto">
                     Explora el fascinante mundo de la impresión 3D con resina a través de nuestra galería. 
-                    Desde la preparación hasta el resultado final, cada imagen y video cuenta una historia.
+                    Desde la preparación hasta el resultado final, cada imagen y video cuenta una historia del proceso completo.
                 </p>
             </div>
 
