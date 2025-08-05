@@ -14,28 +14,28 @@ export const PRINTER_IMAGES: string[] = [
 export const KEY_FEATURES: Feature[] = [
   {
     icon: <ResolutionIcon />,
-    title: "Resolución Profesional 8K",
-    description: "Pantalla LCD monocromática de 10.3\" (7680x4320) con resolución XY de 29,7 μm para detalles ultrafinos."
+    title: "Resolución Técnica 8K",
+    description: "Pantalla LCD monocromática de 10.3\" con resolución de 7680x4320 píxeles, proporcionando una precisión XY de 29,7 μm para aplicaciones de microfabricación."
   },
   {
     icon: <SpeedIcon />,
-    title: "Velocidad de Impresión Superior",
-    description: "Alcanza hasta 170 mm/h gracias al sistema de movimiento 'Dynax' y la Fuente de Luz Integral 3.0."
+    title: "Optimización de Velocidad",
+    description: "Sistema de movimiento 'Dynax' combinado con Fuente de Luz Integral 3.0, alcanzando velocidades de hasta 170 mm/h para proyectos de desarrollo rápido."
   },
   {
     icon: <VolumeIcon />,
-    title: "Gran Volumen de Construcción",
-    description: "Espacio de 228 x 128 x 230 mm para crear modelos grandes o múltiples piezas a la vez."
+    title: "Volumen de Trabajo",
+    description: "Área de construcción de 228 x 128 x 230 mm, permitiendo la fabricación de prototipos de mediano formato y producción en lotes reducidos."
   },
   {
     icon: <SmartIcon />,
-    title: "Sistema Inteligente",
-    description: "Incluye bomba de llenado/extracción automática de resina y un purificador de aire con filtro de carbón activado."
+    title: "Automatización de Procesos",
+    description: "Integra bomba automática de llenado/extracción de resina y sistema de purificación de aire con filtro de carbón activado para un entorno de trabajo controlado."
   },
   {
     icon: <ConnectivityIcon />,
-    title: "Conectividad Avanzada",
-    description: "Control a través de WiFi, cable RJ45 y la plataforma en la nube Creality Cloud para una gestión flexible."
+    title: "Conectividad de Red",
+    description: "Capacidades de control remoto mediante WiFi, ethernet RJ45 y plataforma Creality Cloud para gestión distribuida de procesos de fabricación."
   }
 ];
 
@@ -90,36 +90,36 @@ export const MAINTENANCE_TIPS: string[] = [
 
 export const AI_TOOL_CATEGORIES: AiToolCategory[] = [
   {
-    category: "Diseño Asistido por IA (Texto/Imagen a 3D)",
-    description: "Genera conceptos, inspiración y modelos 3D a partir de descripciones de texto o imágenes.",
+    category: "Diseño Generativo Asistido por IA",
+    description: "Herramientas de generación de modelos 3D mediante procesamiento de lenguaje natural e imágenes.",
     tools: [
-      { name: "Luma AI (Genie)", description: "Herramienta de vanguardia para la generación de modelos 3D a partir de texto.", link: "https://lumalabs.ai/genie", icon: <LumaIcon /> },
-      { name: "Midjourney", description: "Ideal para generar conceptos visuales e inspiración artística para tus modelos.", link: "https://www.midjourney.com", icon: <MidjourneyIcon /> },
-      { name: "DALL·E 3", description: "Integrado en ChatGPT Plus y Copilot, crea imágenes detalladas a partir de texto.", link: "https://openai.com/dall-e-3", icon: <OpenAiIcon /> },
+      { name: "Luma AI (Genie)", description: "Sistema de generación de geometría 3D a partir de prompts textuales mediante redes neuronales.", link: "https://lumalabs.ai/genie", icon: <LumaIcon /> },
+      { name: "Midjourney", description: "Plataforma de síntesis de imágenes para conceptualización visual en fases de diseño.", link: "https://www.midjourney.com", icon: <MidjourneyIcon /> },
+      { name: "DALL·E 3", description: "Modelo de difusión integrado en ChatGPT Plus para generación de referencias visuales.", link: "https://openai.com/dall-e-3", icon: <OpenAiIcon /> },
     ]
   },
   {
-    category: "Optimización de Impresión 3D",
-    description: "Usa IA para mejorar la orientación de tus modelos y predecir fallos.",
+    category: "Optimización de Procesos de Fabricación",
+    description: "Aplicación de algoritmos de IA para optimización de parámetros de impresión y control de calidad.",
     tools: [
-      { name: "Printables AI", description: "Optimiza la orientación del modelo para minimizar soportes y mejorar la calidad.", link: "https://www.printables.com/es/ai", icon: <PrintablesIcon /> },
-      { name: "OctoPrint Plugins (ML)", description: "Plugins avanzados para monitoreo inteligente y detección de fallos en tiempo real.", link: "https://plugins.octoprint.org/", icon: <OctoPrintIcon /> },
+      { name: "Printables AI", description: "Sistema de optimización automática de orientación y distribución de soportes.", link: "https://www.printables.com/es/ai", icon: <PrintablesIcon /> },
+      { name: "OctoPrint Plugins (ML)", description: "Módulos de monitoreo inteligente y detección de anomalías en tiempo real.", link: "https://plugins.octoprint.org/", icon: <OctoPrintIcon /> },
     ]
   },
   {
-    category: "Reconstrucción y Mejora de Escaneos 3D",
-    description: "Convierte fotos o escaneos del mundo real en modelos 3D detallados.",
+    category: "Reconstrucción Digital y Fotogrametría",
+    description: "Tecnologías de captura y reconstrucción 3D mediante visión computacional.",
     tools: [
-      { name: "Luma AI (Captures)", description: "App móvil para escanear objetos y escenas y convertirlos en modelos 3D.", link: "https://lumalabs.ai/capture", icon: <LumaIcon /> },
-      { name: "Meshroom", description: "Software de fotogrametría de código abierto para crear modelos 3D a partir de fotos.", link: "https://alicevision.org/#meshroom", icon: <MeshroomIcon /> },
+      { name: "Luma AI (Captures)", description: "Aplicación de fotogrametría mediante NeRF para reconstrucción volumétrica.", link: "https://lumalabs.ai/capture", icon: <LumaIcon /> },
+      { name: "Meshroom", description: "Pipeline de fotogrametría de código abierto basado en Structure from Motion.", link: "https://alicevision.org/#meshroom", icon: <MeshroomIcon /> },
     ]
   },
   {
-      category: "Soporte Técnico y Documentación",
-      description: "Asistentes de IA para resolver dudas y generar contenido.",
+      category: "Asistencia Técnica y Documentación",
+      description: "Sistemas de IA conversacional para soporte técnico y generación de documentación.",
       tools: [
-          { name: "ChatGPT", description: "Resuelve dudas técnicas, genera documentación o crea borradores de guiones.", link: "https://chat.openai.com", icon: <OpenAiIcon /> },
-          { name: "Microsoft Copilot", description: "Asistente de IA para investigación, resolución de problemas y generación de contenido.", link: "https://copilot.microsoft.com", icon: <CopilotIcon /> },
+          { name: "ChatGPT", description: "Sistema de procesamiento de lenguaje natural para consultas técnicas y generación de documentación.", link: "https://chat.openai.com", icon: <OpenAiIcon /> },
+          { name: "Microsoft Copilot", description: "Asistente de IA para investigación técnica, análisis de problemas y síntesis de contenido.", link: "https://copilot.microsoft.com", icon: <CopilotIcon /> },
       ]
   }
 ];

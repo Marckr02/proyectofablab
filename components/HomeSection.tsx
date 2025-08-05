@@ -130,7 +130,7 @@ const HomeSection: React.FC = () => {
           Halot Mage Pro <span className="text-orange-400">8K</span>
         </h1>
         <p className="text-lg text-slate-400 text-center max-w-3xl mx-auto">
-          Descubre la impresora de resina que combina resolución profesional, velocidad superior y un ecosistema inteligente para llevar tus creaciones al siguiente nivel.
+          Análisis técnico de la impresora de resina Halot Mage Pro 8K en el contexto del FabLab EPN. Estudio de sus especificaciones, capacidades de fabricación digital y aplicaciones en proyectos de investigación y desarrollo.
         </p>
       </div>
 

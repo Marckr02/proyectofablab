@@ -44,14 +44,14 @@ const HelpSection: React.FC = () => {
     <section className="space-y-12">
       <div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white text-center mb-4">
-          Guía de Uso y Soporte
+          Manual Técnico y Procedimientos
         </h1>
         <p className="text-lg text-slate-400 text-center max-w-3xl mx-auto">
-          Desde la configuración inicial hasta el mantenimiento, aquí encontrarás todo para dominar la Halot Mage Pro.
+          Documentación técnica para la operación, mantenimiento y resolución de incidencias del equipo Halot Mage Pro en el contexto del FabLab EPN.
         </p>
       </div>
 
-      <SectionCard title="Guía de Inicio Rápido" icon={<RocketIcon />}>
+      <SectionCard title="Protocolo de Puesta en Marcha" icon={<RocketIcon />}>
         <div className="space-y-4">
           {QUICK_START_GUIDE.map((step: TutorialStep) => (
             <div key={step.title} className="p-4 bg-slate-900 rounded-md">
@@ -62,7 +62,7 @@ const HelpSection: React.FC = () => {
         </div>
       </SectionCard>
 
-      <SectionCard title="Solución de Problemas (FAQ)" icon={<HelpIcon />}>
+      <SectionCard title="Resolución de Incidencias Técnicas" icon={<HelpIcon />}>
         <div className="bg-slate-800 rounded-lg">
           {FAQ_ITEMS.map((item, index) => (
             <AccordionItem key={index} item={item} />
@@ -70,7 +70,7 @@ const HelpSection: React.FC = () => {
         </div>
       </SectionCard>
 
-      <SectionCard title="Mantenimiento Preventivo" icon={<CogIcon />}>
+      <SectionCard title="Protocolo de Mantenimiento" icon={<CogIcon />}>
         <ul className="space-y-3 list-disc list-inside text-slate-400">
           {MAINTENANCE_TIPS.map((tip, index) => (
             <li key={index}>{tip}</li>

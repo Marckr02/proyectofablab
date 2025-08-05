@@ -17,7 +17,7 @@ const ToolCard: React.FC<{ tool: AiTool }> = ({ tool }) => (
       rel="noopener noreferrer"
       className="mt-auto inline-flex items-center justify-center gap-2 bg-orange-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-orange-500 transition-colors duration-300"
     >
-      Visitar Herramienta <LinkIcon />
+      Acceder a Herramienta <LinkIcon />
     </a>
   </div>
 );
@@ -27,10 +27,10 @@ const AiToolsSection: React.FC = () => {
     <section className="space-y-12">
       <div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white text-center mb-4">
-          Herramientas de IA para Impresión 3D
+          Herramientas de IA en Fabricación Digital
         </h1>
         <p className="text-lg text-slate-400 text-center max-w-3xl mx-auto">
-          Potencia tu flujo de trabajo desde la concepción hasta la optimización con estas herramientas de inteligencia artificial.
+          Análisis de herramientas de inteligencia artificial aplicables en el proceso de diseño, optimización y fabricación digital en entornos FabLab.
         </p>
       </div>
 

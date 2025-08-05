@@ -58,7 +58,7 @@ const App: React.FC = () => {
               FabLab Connect: Halot Mage Pro
             </p>
         </div>
-        <p className="text-slate-400">Una iniciativa de IA + DevOps para el FabLab EPN.</p>
+        <p className="text-slate-400">Proyecto de investigación aplicada en fabricación digital - FabLab EPN.</p>
       </footer>
     </div>
   );

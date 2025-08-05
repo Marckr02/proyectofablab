@@ -12,23 +12,23 @@ interface VideoItem {
 const FINAL_VIDEOS: VideoItem[] = [
   {
     id: 'video-presentacion-ia',
-    title: 'Video 1 – Presentación de la herramienta IA',
-    description: 'Este video introduce la herramienta de inteligencia artificial seleccionada, explicando qué es, cómo se accede a ella y cuáles son sus principales ventajas. Se contextualiza su utilidad dentro del entorno FabLab, destacando su potencial para facilitar tareas técnicas y creativas.',
+    title: 'Video 1 – Marco Teórico: Herramientas de IA',
+    description: 'Fundamentación teórica de la herramienta de inteligencia artificial seleccionada para el estudio. Se analiza su arquitectura, metodología de acceso y características técnicas relevantes. Se contextualiza su aplicabilidad en el entorno FabLab mediante revisión de literatura especializada.',
     duration: '2–3 minutos',
     src: '/Video 1_Proyecto ISR.mp4',
     thumbnail: '/Modelo 3D Impreso Finalizado.jpg'
   },
   {
     id: 'video-caso-practico',
-    title: 'Video 2 – Caso práctico en el FabLab',
-    description: 'Se muestra un caso práctico de uso real o simulado de la herramienta aplicada a un equipo del FabLab. El video evidencia cómo la inteligencia artificial puede optimizar procesos específicos, mejorar la eficiencia del trabajo y apoyar la toma de decisiones técnicas.',
+    title: 'Video 2 – Estudio de Caso: Aplicación Práctica',
+    description: 'Implementación experimental de la herramienta de IA aplicada a equipamiento específico del FabLab. Metodología de evaluación, métricas de rendimiento y análisis comparativo de eficiencia operacional. Documentación de resultados y validación técnica del proceso.',
     duration: '3–5 minutos',
     src: '/Video 2_Proyecto ISR.mp4'
   },
   {
     id: 'video-integracion-futura',
-    title: 'Video 3 – Propuesta de integración futura',
-    description: 'Este video presenta una visión a futuro sobre la integración de la herramienta en el FabLab. Se plantean ideas para su implementación continua, buscando fomentar una cultura de mejora constante y adopción tecnológica dentro del espacio de fabricación digital.',
+    title: 'Video 3 – Propuesta Metodológica de Integración',
+    description: 'Desarrollo de un marco metodológico para la integración sistemática de herramientas de IA en espacios de fabricación digital. Análisis de viabilidad técnica, consideraciones de escalabilidad y recomendaciones para implementación en entornos académicos similares.',
     duration: '2–3 minutos',
     src: '/Video 3_Proyecto ISR.mp4',
     thumbnail: '/Configuración de la impresión 3D en Halot Box.jpg'
@@ -129,11 +129,11 @@ const VideosSection: React.FC = () => {
           <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
           </svg>
-          <h2 className="text-3xl font-bold text-white">Videos Finales del Proyecto</h2>
+          <h2 className="text-3xl font-bold text-white">Documentación Audiovisual del Proyecto</h2>
         </div>
         <p className="text-slate-400 max-w-3xl mx-auto">
-          Serie de videos sobre la integración de herramientas de inteligencia artificial en el entorno FabLab. 
-          Desde la introducción de las tecnologías hasta casos prácticos y propuestas de implementación futura en el espacio de fabricación digital.
+          Documentación audiovisual del estudio sobre integración de herramientas de inteligencia artificial en el entorno FabLab. 
+          Análisis desde la fundamentación teórica hasta la evaluación de casos de uso y propuestas de implementación en espacios de fabricación digital.
         </p>
       </div>
 
@@ -153,13 +153,13 @@ const VideosSection: React.FC = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Información sobre los Videos</h3>
+            <h3 className="text-lg font-semibold text-white mb-2">Metodología de Documentación</h3>
             <ul className="text-slate-400 text-sm space-y-1">
-              <li>• Los videos documentan la integración de herramientas de IA en el FabLab</li>
-              <li>• Cada video tiene una duración específica optimizada para el contenido</li>
-              <li>• Se reproducen sin sonido por defecto para una mejor experiencia de navegación</li>
-              <li>• Los videos próximos se añadirán conforme se complete la grabación y edición</li>
-              <li>• Enfoque en casos prácticos y propuestas de implementación real</li>
+              <li>• Registro audiovisual de procesos de investigación aplicada en fabricación digital</li>
+              <li>• Cada segmento presenta duración específica optimizada para la transmisión de contenido técnico</li>
+              <li>• Reproducción sin audio activado por defecto para navegación fluida en el entorno web</li>
+              <li>• Documentación progresiva conforme avance del cronograma de investigación</li>
+              <li>• Enfoque metodológico en validación experimental y propuestas de implementación</li>
             </ul>
           </div>
         </div>
