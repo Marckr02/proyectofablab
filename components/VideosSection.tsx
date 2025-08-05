@@ -16,14 +16,15 @@ const FINAL_VIDEOS: VideoItem[] = [
     description: 'Fundamentación teórica de la herramienta de inteligencia artificial seleccionada para el estudio. Se analiza su arquitectura, metodología de acceso y características técnicas relevantes. Se contextualiza su aplicabilidad en el entorno FabLab mediante revisión de literatura especializada.',
     duration: '2–3 minutos',
     src: '/Video 1_Proyecto ISR.mp4',
-    thumbnail: '/Modelo 3D Impreso Finalizado.jpg'
+    thumbnail: '/video-1-cover.svg'
   },
   {
     id: 'video-caso-practico',
     title: 'Video 2 – Estudio de Caso: Aplicación Práctica',
     description: 'Implementación experimental de la herramienta de IA aplicada a equipamiento específico del FabLab. Metodología de evaluación, métricas de rendimiento y análisis comparativo de eficiencia operacional. Documentación de resultados y validación técnica del proceso.',
     duration: '3–5 minutos',
-    src: '/Video 2_Proyecto ISR.mp4'
+    src: '/Video 2_Proyecto ISR.mp4',
+    thumbnail: '/video-2-cover.svg'
   },
   {
     id: 'video-integracion-futura',
@@ -31,7 +32,7 @@ const FINAL_VIDEOS: VideoItem[] = [
     description: 'Desarrollo de un marco metodológico para la integración sistemática de herramientas de IA en espacios de fabricación digital. Análisis de viabilidad técnica, consideraciones de escalabilidad y recomendaciones para implementación en entornos académicos similares.',
     duration: '2–3 minutos',
     src: '/Video 3_Proyecto ISR.mp4',
-    thumbnail: '/Configuración de la impresión 3D en Halot Box.jpg'
+    thumbnail: '/video-3-cover.svg'
   }
 ];
 

@@ -1,0 +1,45 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#backgroundGradient)"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#475569" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#grid)" />
+  
+  <!-- Play button background circle -->
+  <circle cx="960" cy="440" r="120" fill="#f97316" opacity="0.2"/>
+  <circle cx="960" cy="440" r="100" fill="#f97316" opacity="0.4"/>
+  <circle cx="960" cy="440" r="80" fill="#f97316" opacity="0.6"/>
+  
+  <!-- Play icon -->
+  <polygon points="920,400 920,480 1000,440" fill="#ffffff"/>
+  
+  <!-- Main text -->
+  <text x="960" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="url(#textGradient)">Video 3</text>
+  
+  <!-- Subtitle -->
+  <text x="960" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#94a3b8">Propuesta Metodológica de Integración</text>
+  
+  <!-- Duration -->
+  <rect x="840" y="760" width="240" height="40" rx="20" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+  <text x="960" y="785" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#f97316">2–3 minutos</text>
+  
+  <!-- FabLab branding -->
+  <text x="960" y="950" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#64748b">FabLab EPN - Proyecto ISR</text>
+</svg>
