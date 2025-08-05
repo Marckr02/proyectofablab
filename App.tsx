@@ -6,6 +6,7 @@ import HomeSection from './components/HomeSection';
 import HelpSection from './components/HelpSection';
 import AiToolsSection from './components/AiToolsSection';
 import GallerySection from './components/GallerySection';
+import VideosSection from './components/VideosSection';
 import { LogoIcon } from './components/Icons';
 
 const App: React.FC = () => {
@@ -19,6 +20,8 @@ const App: React.FC = () => {
         return <HelpSection />;
       case 'gallery':
         return <GallerySection />;
+      case 'videos':
+        return <VideosSection />;
       case 'ai':
         return <AiToolsSection />;
       default:

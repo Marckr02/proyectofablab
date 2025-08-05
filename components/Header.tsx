@@ -52,6 +52,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
               <NavButton label="Inicio" sectionName="home" activeSection={activeSection} onClick={setActiveSection} />
               <NavButton label="Ayuda" sectionName="help" activeSection={activeSection} onClick={setActiveSection} />
               <NavButton label="Galería" sectionName="gallery" activeSection={activeSection} onClick={setActiveSection} />
+              <NavButton label="Videos" sectionName="videos" activeSection={activeSection} onClick={setActiveSection} />
               <NavButton label="IA Tools" sectionName="ai" activeSection={activeSection} onClick={setActiveSection} />
             </div>
           </div>
