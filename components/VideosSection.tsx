@@ -4,28 +4,32 @@ interface VideoItem {
   id: string;
   title: string;
   description: string;
+  duration?: string;
   src: string;
   thumbnail?: string;
 }
 
 const FINAL_VIDEOS: VideoItem[] = [
   {
-    id: 'video-proyecto-isr',
-    title: 'Video 2 - Proyecto ISR',
-    description: 'Presentación completa del proyecto de Impresión 3D con tecnología ISR (Intelligent Stereolithography Resin), mostrando el proceso completo desde el diseño hasta el resultado final.',
-    src: '/Video 2_Proyecto ISR.mp4'
-  },
-  {
-    id: 'video-placeholder-1',
-    title: 'Próximamente - Video 1',
-    description: 'Este espacio está reservado para el primer video del proyecto. Pronto se añadirá contenido adicional mostrando aspectos específicos del proceso de impresión 3D.',
+    id: 'video-presentacion-ia',
+    title: 'Video 1 – Presentación de la herramienta IA',
+    description: 'Este video introduce la herramienta de inteligencia artificial seleccionada, explicando qué es, cómo se accede a ella y cuáles son sus principales ventajas. Se contextualiza su utilidad dentro del entorno FabLab, destacando su potencial para facilitar tareas técnicas y creativas.',
+    duration: '2–3 minutos',
     src: '',
     thumbnail: '/Modelo 3D Impreso Finalizado.jpg'
   },
   {
-    id: 'video-placeholder-2',
-    title: 'Próximamente - Video 3',
-    description: 'Este espacio está reservado para el tercer video del proyecto. Se incluirán detalles avanzados y casos de uso específicos de la Halot Mage Pro.',
+    id: 'video-caso-practico',
+    title: 'Video 2 – Caso práctico en el FabLab',
+    description: 'Se muestra un caso práctico de uso real o simulado de la herramienta aplicada a un equipo del FabLab. El video evidencia cómo la inteligencia artificial puede optimizar procesos específicos, mejorar la eficiencia del trabajo y apoyar la toma de decisiones técnicas.',
+    duration: '3–5 minutos',
+    src: '/Video 2_Proyecto ISR.mp4'
+  },
+  {
+    id: 'video-integracion-futura',
+    title: 'Video 3 – Propuesta de integración futura',
+    description: 'Este video presenta una visión a futuro sobre la integración de la herramienta en el FabLab. Se plantean ideas para su implementación continua, buscando fomentar una cultura de mejora constante y adopción tecnológica dentro del espacio de fabricación digital.',
+    duration: '2–3 minutos',
     src: '',
     thumbnail: '/Configuración de la impresión 3D en Halot Box.jpg'
   }
@@ -91,6 +95,15 @@ const VideoCard: React.FC<{ video: VideoItem; index: number }> = ({ video, index
           {video.title}
         </h3>
         
+        {video.duration && (
+          <div className="flex items-center gap-2 text-orange-400 text-sm mb-3">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Duración: {video.duration}</span>
+          </div>
+        )}
+        
         <p className="text-slate-400 text-sm leading-relaxed mb-4">
           {video.description}
         </p>
@@ -119,8 +132,8 @@ const VideosSection: React.FC = () => {
           <h2 className="text-3xl font-bold text-white">Videos Finales del Proyecto</h2>
         </div>
         <p className="text-slate-400 max-w-3xl mx-auto">
-          Presentaciones completas del proyecto FabLab Connect: Halot Mage Pro. 
-          Aquí encontrarás documentación audiovisual detallada del proceso, resultados y conclusiones del proyecto de impresión 3D.
+          Serie de videos sobre la integración de herramientas de inteligencia artificial en el entorno FabLab. 
+          Desde la introducción de las tecnologías hasta casos prácticos y propuestas de implementación futura en el espacio de fabricación digital.
         </p>
       </div>
 
@@ -142,10 +155,11 @@ const VideosSection: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-2">Información sobre los Videos</h3>
             <ul className="text-slate-400 text-sm space-y-1">
-              <li>• Los videos se reproducen sin sonido por defecto para una mejor experiencia de navegación</li>
-              <li>• Puedes activar el audio usando los controles del reproductor</li>
-              <li>• Los videos próximos se añadirán conforme se complete la documentación del proyecto</li>
-              <li>• Todos los videos están optimizados para web y se cargan progresivamente</li>
+              <li>• Los videos documentan la integración de herramientas de IA en el FabLab</li>
+              <li>• Cada video tiene una duración específica optimizada para el contenido</li>
+              <li>• Se reproducen sin sonido por defecto para una mejor experiencia de navegación</li>
+              <li>• Los videos próximos se añadirán conforme se complete la grabación y edición</li>
+              <li>• Enfoque en casos prácticos y propuestas de implementación real</li>
             </ul>
           </div>
         </div>
