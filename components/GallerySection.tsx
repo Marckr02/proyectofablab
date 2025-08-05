@@ -35,7 +35,14 @@ const Modal: React.FC<{
                        {item.type === 'image' ? (
                             <img src={item.src} alt={item.title} className="w-full h-full object-contain" />
                         ) : (
-                            <video src={item.src} controls autoPlay muted className="w-full h-full object-contain">
+                            <video 
+                                src={item.src} 
+                                autoPlay 
+                                loop 
+                                muted 
+                                className="w-full h-full object-contain"
+                                style={{ pointerEvents: 'none' }}
+                            >
                                 Your browser does not support the video tag.
                             </video>
                         )}

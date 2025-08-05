@@ -3,12 +3,14 @@ import React from 'react';
 import type { Feature, Spec, FaqItem, AiToolCategory, TutorialStep, GalleryItem } from './types';
 import { ResolutionIcon, SpeedIcon, VolumeIcon, SmartIcon, ConnectivityIcon, LinkIcon, LumaIcon, OpenAiIcon, MidjourneyIcon, PrintablesIcon, OctoPrintIcon, MeshroomIcon, CopilotIcon } from './components/Icons';
 
-// Usando rutas directas ya que los archivos están en el directorio público
+// Imágenes para la página principal (etiqueta P)
 export const PRINTER_IMAGES: string[] = [
-    '/Modelo 3D Impreso Finalizado.jpg', // Resultado final impreso
-    '/Configuración de la impresión 3D en Halot Box.jpg', // Configuración en software
-    '/Colocación de protección previo a la Impresión.jpg',  // Persona operando la impresora de forma segura
-    '/Modelo 3D Impreso.jpg', // Proceso de impresión
+    '/P_G_Producto Final_1.jpg',
+    '/P_Producto Final_1.jpg', 
+    '/G_P_Producto Final_2.jpg',
+    '/G_P_Producto Final_3.jpg',
+    '/G_P_Prototipo_1.jpg',
+    '/G_P_Prototipo_2.jpg'
 ];
 
 export const KEY_FEATURES: Feature[] = [
@@ -126,75 +128,84 @@ export const AI_TOOL_CATEGORIES: AiToolCategory[] = [
 
 export const GALLERY_ITEMS: GalleryItem[] = [
     { 
-        id: 'safety-preparation', 
-        title: 'Colocación de Protección Previo a la Impresión', 
-        description: 'La seguridad es fundamental en la impresión 3D con resina. Aquí se muestra la correcta colocación del equipo de protección personal antes de comenzar el proceso.', 
-        tags: ['Seguridad', 'Preparación', 'EPP'], 
+        id: 'print-parameters', 
+        title: 'Parámetros de Impresión Configurados', 
+        description: 'Documentación de los parámetros técnicos establecidos para el proceso de fabricación digital. Configuración optimizada para el material de resina flexible utilizado.', 
+        tags: ['Parámetros', 'Configuración', 'Documentación'], 
         type: 'image', 
-        src: '/Colocación de protección previo a la Impresión.jpg', 
-        thumbnail: '/Colocación de protección previo a la Impresión.jpg' 
+        src: '/G_Parametros de impresión.jpg', 
+        thumbnail: '/G_Parametros de impresión.jpg' 
     },
     { 
-        id: 'slicer-settings', 
-        title: 'Configuración de la Impresión 3D en Halot Box', 
-        description: 'Ajustando los parámetros críticos en el software Halot Box. La correcta configuración del tiempo de exposición, altura de capa y soportes es clave para una impresión exitosa.', 
-        tags: ['Configuración', 'HalotBox', 'Software', 'Parámetros'], 
+        id: 'flexible-resin', 
+        title: 'Resina Flexible Utilizada en la Impresión', 
+        description: 'Análisis del material utilizado en el proceso de fabricación. Características técnicas de la resina flexible y sus propiedades mecánicas específicas.', 
+        tags: ['Material', 'Resina Flexible', 'Especificaciones'], 
         type: 'image', 
-        src: '/Configuración de la impresión 3D en Halot Box.jpg', 
-        thumbnail: '/Configuración de la impresión 3D en Halot Box.jpg' 
-    },
-    { 
-        id: 'printer-parameters', 
-        title: 'Parámetros Usados en la Impresora', 
-        description: 'Vista detallada de los parámetros optimizados para esta impresión específica. Cada modelo requiere ajustes precisos para obtener la mejor calidad.', 
-        tags: ['Parámetros', 'Configuración', 'Optimización'], 
-        type: 'image', 
-        src: '/Parametros usados en la impresora.jpg', 
-        thumbnail: '/Parametros usados en la impresora.jpg' 
-    },
-    { 
-        id: 'printing-process', 
-        title: 'Proceso de Impresión de la Pieza (Video)', 
-        description: 'Observa el fascinante proceso de impresión capa por capa. La Halot Mage Pro trabajando con precisión milimétrica para crear objetos tridimensionales complejos.', 
-        tags: ['Proceso', 'Impresión', 'Video', 'Tecnología'], 
-        type: 'video', 
-        src: '/Proceso de impresión de la pieza.mp4', 
-        thumbnail: '/Modelo 3D Impreso.jpg' 
-    },
-    { 
-        id: 'printed-model', 
-        title: 'Modelo 3D Impreso', 
-        description: 'El resultado de la impresión 3D recién salido de la impresora. Se puede apreciar la alta calidad y detalle que ofrece la tecnología MSLA de la Halot Mage Pro.', 
-        tags: ['Resultado', 'Calidad', 'Modelo 3D'], 
-        type: 'image', 
-        src: '/Modelo 3D Impreso.jpg', 
-        thumbnail: '/Modelo 3D Impreso.jpg' 
+        src: '/G_Resina Flexible usada en la impresión.jpg', 
+        thumbnail: '/G_Resina Flexible usada en la impresión.jpg' 
     },
     { 
         id: 'centrifuge-process', 
-        title: 'Centrifugado de la Pieza Impresa (Video)', 
-        description: 'Proceso de centrifugado para eliminar el exceso de resina líquida de la pieza recién impresa. Este paso es crucial antes del lavado con alcohol isopropílico.', 
-        tags: ['Post-procesado', 'Centrifugado', 'Video', 'Limpieza'], 
+        title: 'Proceso de Centrifugado Post-Impresión', 
+        description: 'Documentación del proceso de centrifugado para eliminación de exceso de resina líquida. Etapa crítica en el protocolo de post-procesado del prototipo.', 
+        tags: ['Post-procesado', 'Centrifugado', 'Protocolo'], 
         type: 'video', 
-        src: '/Centrifugado de la pieza impresa.mp4', 
-        thumbnail: '/Modelo 3D Impreso Finalizado.jpg' 
+        src: '/G_Centrigudado.mp4', 
+        thumbnail: '/G_P_Producto Final_2.jpg' 
     },
     { 
-        id: 'uv-treatment', 
-        title: 'Tratamiento UV de la Pieza Impresa (Video)', 
-        description: 'Última etapa del post-procesado: curado con luz UV para endurecer completamente la resina y obtener las propiedades mecánicas finales de la pieza.', 
-        tags: ['Curado UV', 'Post-procesado', 'Video', 'Finalización'], 
+        id: 'uv-curing', 
+        title: 'Curación con Rayos UV', 
+        description: 'Proceso de fotopolimerización mediante radiación ultravioleta. Etapa final del protocolo de post-procesado para alcanzar las propiedades mecánicas definitivas.', 
+        tags: ['Curado UV', 'Fotopolimerización', 'Proceso Final'], 
         type: 'video', 
-        src: '/Tratamiento UV de la pieza Impresa.mp4', 
-        thumbnail: '/Modelo 3D Impreso Finalizado.jpg' 
+        src: '/G_Curación con rayos UV.mp4', 
+        thumbnail: '/G_P_Producto Final_3.jpg' 
     },
     { 
-        id: 'final-result', 
-        title: 'Modelo 3D Impreso Finalizado', 
-        description: 'El resultado final después de todo el proceso: impresión, limpieza, centrifugado y curado UV. Una pieza de alta calidad lista para usar.', 
-        tags: ['Resultado Final', 'Alta Calidad', 'Terminado'], 
+        id: 'final-product-video', 
+        title: 'Producto Final - Documentación Audiovisual', 
+        description: 'Registro audiovisual del prototipo completamente procesado. Demostración de las características finales y funcionalidad del objeto fabricado digitalmente.', 
+        tags: ['Producto Final', 'Documentación', 'Validación'], 
+        type: 'video', 
+        src: '/G_Producto Final_1.mp4', 
+        thumbnail: '/G_P_Producto Final_2.jpg' 
+    },
+    { 
+        id: 'final-product-detail-1', 
+        title: 'Producto Final - Vista Detallada 1', 
+        description: 'Documentación fotográfica de alta resolución del prototipo finalizado. Análisis visual de la calidad superficial y precisión dimensional alcanzada.', 
+        tags: ['Producto Final', 'Análisis Visual', 'Calidad'], 
         type: 'image', 
-        src: '/Modelo 3D Impreso Finalizado.jpg', 
-        thumbnail: '/Modelo 3D Impreso Finalizado.jpg' 
+        src: '/G_P_Producto Final_2.jpg', 
+        thumbnail: '/G_P_Producto Final_2.jpg' 
+    },
+    { 
+        id: 'final-product-detail-2', 
+        title: 'Producto Final - Vista Detallada 2', 
+        description: 'Segunda perspectiva del prototipo completado, mostrando detalles específicos de la geometría y acabado superficial obtenido mediante estereolitografía.', 
+        tags: ['Producto Final', 'Geometría', 'Acabado'], 
+        type: 'image', 
+        src: '/G_P_Producto Final_3.jpg', 
+        thumbnail: '/G_P_Producto Final_3.jpg' 
+    },
+    { 
+        id: 'prototype-analysis-1', 
+        title: 'Análisis del Prototipo - Vista 1', 
+        description: 'Documentación del prototipo en fase de validación. Registro fotográfico para análisis dimensional y evaluación de conformidad con especificaciones de diseño.', 
+        tags: ['Prototipo', 'Validación', 'Análisis Dimensional'], 
+        type: 'image', 
+        src: '/G_P_Prototipo_1.jpg', 
+        thumbnail: '/G_P_Prototipo_1.jpg' 
+    },
+    { 
+        id: 'prototype-analysis-2', 
+        title: 'Análisis del Prototipo - Vista 2', 
+        description: 'Perspectiva complementaria del prototipo desarrollado, evidenciando las características técnicas y funcionales del diseño implementado.', 
+        tags: ['Prototipo', 'Características Técnicas', 'Diseño'], 
+        type: 'image', 
+        src: '/G_P_Prototipo_2.jpg', 
+        thumbnail: '/G_P_Prototipo_2.jpg' 
     }
 ];
