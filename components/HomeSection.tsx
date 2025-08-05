@@ -42,18 +42,29 @@ const ImageCarousel: React.FC = () => {
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10"></div>
             
-            {PRINTER_IMAGES.map((src, index) => (
-                 <img
-                    key={src}
-                    src={src}
-                    alt={`Halot Mage Pro 8k - Vista ${index + 1}`}
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out transform ${
-                        index === currentIndex 
-                            ? 'opacity-100 scale-100' 
-                            : 'opacity-0 scale-110'
-                    }`}
-                />
-            ))}
+            {PRINTER_IMAGES.map((src, index) => {
+                const altTexts = [
+                    'Producto Final Principal - Prototipo Completado',
+                    'Producto Final Detalle 1 - Acabado Superficial',
+                    'Producto Final Vista 2 - Análisis Dimensional',
+                    'Producto Final Vista 3 - Perspectiva Técnica',
+                    'Prototipo Vista 1 - Validación de Diseño',
+                    'Prototipo Vista 2 - Características Funcionales'
+                ];
+                
+                return (
+                    <img
+                        key={src}
+                        src={src}
+                        alt={altTexts[index] || `Halot Mage Pro 8k - Vista ${index + 1}`}
+                        className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out transform ${
+                            index === currentIndex 
+                                ? 'opacity-100 scale-100' 
+                                : 'opacity-0 scale-110'
+                        }`}
+                    />
+                );
+            })}
             
             {/* Controles mejorados */}
             <button 
@@ -130,7 +141,7 @@ const HomeSection: React.FC = () => {
           Halot Mage Pro <span className="text-orange-400">8K</span>
         </h1>
         <p className="text-lg text-slate-400 text-center max-w-3xl mx-auto">
-          Descubre la impresora de resina que combina resolución profesional, velocidad superior y un ecosistema inteligente para llevar tus creaciones al siguiente nivel.
+          Análisis técnico de la impresora de resina Halot Mage Pro 8K en el contexto del FabLab EPN. Estudio de sus especificaciones, capacidades de fabricación digital y aplicaciones en proyectos de investigación y desarrollo.
         </p>
       </div>
 

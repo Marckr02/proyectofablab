@@ -6,6 +6,8 @@ import HomeSection from './components/HomeSection';
 import HelpSection from './components/HelpSection';
 import AiToolsSection from './components/AiToolsSection';
 import GallerySection from './components/GallerySection';
+import VideosSection from './components/VideosSection';
+import FloatingHelpButton from './components/FloatingHelpButton';
 import { LogoIcon } from './components/Icons';
 
 const App: React.FC = () => {
@@ -19,6 +21,8 @@ const App: React.FC = () => {
         return <HelpSection />;
       case 'gallery':
         return <GallerySection />;
+      case 'videos':
+        return <VideosSection />;
       case 'ai':
         return <AiToolsSection />;
       default:
@@ -41,6 +45,10 @@ const App: React.FC = () => {
           {renderSection()}
         </div>
       </main>
+      
+      {/* Botón flotante de ayuda */}
+      <FloatingHelpButton activeSection={activeSection} setActiveSection={setActiveSection} />
+      
       <footer className="text-center p-8 text-slate-500 border-t border-slate-700/50 mt-8 relative z-10 bg-slate-900/50 backdrop-blur-sm">
         <div className="flex items-center justify-center gap-3 mb-3">
             <div className="transform transition-transform duration-300 hover:rotate-12">
@@ -50,7 +58,7 @@ const App: React.FC = () => {
               FabLab Connect: Halot Mage Pro
             </p>
         </div>
-        <p className="text-slate-400">Una iniciativa de IA + DevOps para el FabLab EPN.</p>
+        <p className="text-slate-400">Proyecto de investigación aplicada en fabricación digital - FabLab EPN.</p>
       </footer>
     </div>
   );

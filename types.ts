@@ -1,5 +1,5 @@
 
-export type Section = 'home' | 'help' | 'gallery' | 'ai';
+export type Section = 'home' | 'help' | 'gallery' | 'ai' | 'videos';
 
 export interface Feature {
   icon: React.ReactNode;

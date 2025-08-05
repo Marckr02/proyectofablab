@@ -48,10 +48,10 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
             </div>
           </div>
           <div className="flex items-center">
-            <div className="flex items-baseline space-x-2 sm:space-x-3 p-2 bg-slate-800/30 rounded-xl backdrop-blur-sm">
+            <div className="flex items-baseline space-x-2 sm:space-x-4 p-2 bg-slate-800/30 rounded-xl backdrop-blur-sm">
               <NavButton label="Inicio" sectionName="home" activeSection={activeSection} onClick={setActiveSection} />
-              <NavButton label="Ayuda" sectionName="help" activeSection={activeSection} onClick={setActiveSection} />
               <NavButton label="Galería" sectionName="gallery" activeSection={activeSection} onClick={setActiveSection} />
+              <NavButton label="Videos" sectionName="videos" activeSection={activeSection} onClick={setActiveSection} />
               <NavButton label="IA Tools" sectionName="ai" activeSection={activeSection} onClick={setActiveSection} />
             </div>
           </div>

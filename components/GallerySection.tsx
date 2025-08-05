@@ -35,7 +35,14 @@ const Modal: React.FC<{
                        {item.type === 'image' ? (
                             <img src={item.src} alt={item.title} className="w-full h-full object-contain" />
                         ) : (
-                            <video src={item.src} controls autoPlay className="w-full h-full object-contain">
+                            <video 
+                                src={item.src} 
+                                autoPlay 
+                                loop 
+                                muted 
+                                className="w-full h-full object-contain"
+                                style={{ pointerEvents: 'none' }}
+                            >
                                 Your browser does not support the video tag.
                             </video>
                         )}
@@ -156,11 +163,11 @@ const GallerySection: React.FC = () => {
             <div className="text-center">
                 <div className="flex items-center justify-center gap-3 mb-4">
                     <GalleryIcon />
-                    <h2 className="text-3xl font-bold text-white">Galería del Proceso</h2>
+                    <h2 className="text-3xl font-bold text-white">Documentación del Proceso</h2>
                 </div>
                 <p className="text-slate-400 max-w-2xl mx-auto">
-                    Explora el fascinante mundo de la impresión 3D con resina a través de nuestra galería. 
-                    Desde la preparación hasta el resultado final, cada imagen y video cuenta una historia.
+                    Documentación visual del proceso de fabricación digital con tecnología de estereolitografía. 
+                    Registro fotográfico y audiovisual de las etapas de preparación, impresión y post-procesado del prototipo desarrollado.
                 </p>
             </div>
 

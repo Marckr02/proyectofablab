@@ -3,39 +3,41 @@ import React from 'react';
 import type { Feature, Spec, FaqItem, AiToolCategory, TutorialStep, GalleryItem } from './types';
 import { ResolutionIcon, SpeedIcon, VolumeIcon, SmartIcon, ConnectivityIcon, LinkIcon, LumaIcon, OpenAiIcon, MidjourneyIcon, PrintablesIcon, OctoPrintIcon, MeshroomIcon, CopilotIcon } from './components/Icons';
 
-// Usando rutas directas ya que los archivos están en el directorio público
+// Imágenes para la página principal (etiqueta P)
 export const PRINTER_IMAGES: string[] = [
-    '/Modelo 3D Impreso Finalizado.jpg', // Resultado final impreso
-    '/Configuración de la impresión 3D en Halot Box.jpg', // Configuración en software
-    '/Colocación de protección previo a la Impresión.jpg',  // Persona operando la impresora de forma segura
-    '/Modelo 3D Impreso.jpg', // Proceso de impresión
+    '/P_G_Producto Final_1.jpg',
+    '/P_Producto Final_1.jpg', 
+    '/G_P_Producto Final_2.jpg',
+    '/G_P_Producto Final_3.jpg',
+    '/G_P_Prototipo_1.jpg',
+    '/G_P_Prototipo_2.jpg'
 ];
 
 export const KEY_FEATURES: Feature[] = [
   {
     icon: <ResolutionIcon />,
-    title: "Resolución Profesional 8K",
-    description: "Pantalla LCD monocromática de 10.3\" (7680x4320) con resolución XY de 29,7 μm para detalles ultrafinos."
+    title: "Resolución Técnica 8K",
+    description: "Pantalla LCD monocromática de 10.3\" con resolución de 7680x4320 píxeles, proporcionando una precisión XY de 29,7 μm para aplicaciones de microfabricación."
   },
   {
     icon: <SpeedIcon />,
-    title: "Velocidad de Impresión Superior",
-    description: "Alcanza hasta 170 mm/h gracias al sistema de movimiento 'Dynax' y la Fuente de Luz Integral 3.0."
+    title: "Optimización de Velocidad",
+    description: "Sistema de movimiento 'Dynax' combinado con Fuente de Luz Integral 3.0, alcanzando velocidades de hasta 170 mm/h para proyectos de desarrollo rápido."
   },
   {
     icon: <VolumeIcon />,
-    title: "Gran Volumen de Construcción",
-    description: "Espacio de 228 x 128 x 230 mm para crear modelos grandes o múltiples piezas a la vez."
+    title: "Volumen de Trabajo",
+    description: "Área de construcción de 228 x 128 x 230 mm, permitiendo la fabricación de prototipos de mediano formato y producción en lotes reducidos."
   },
   {
     icon: <SmartIcon />,
-    title: "Sistema Inteligente",
-    description: "Incluye bomba de llenado/extracción automática de resina y un purificador de aire con filtro de carbón activado."
+    title: "Automatización de Procesos",
+    description: "Integra bomba automática de llenado/extracción de resina y sistema de purificación de aire con filtro de carbón activado para un entorno de trabajo controlado."
   },
   {
     icon: <ConnectivityIcon />,
-    title: "Conectividad Avanzada",
-    description: "Control a través de WiFi, cable RJ45 y la plataforma en la nube Creality Cloud para una gestión flexible."
+    title: "Conectividad de Red",
+    description: "Capacidades de control remoto mediante WiFi, ethernet RJ45 y plataforma Creality Cloud para gestión distribuida de procesos de fabricación."
   }
 ];
 
@@ -90,111 +92,120 @@ export const MAINTENANCE_TIPS: string[] = [
 
 export const AI_TOOL_CATEGORIES: AiToolCategory[] = [
   {
-    category: "Diseño Asistido por IA (Texto/Imagen a 3D)",
-    description: "Genera conceptos, inspiración y modelos 3D a partir de descripciones de texto o imágenes.",
+    category: "Diseño Generativo Asistido por IA",
+    description: "Herramientas de generación de modelos 3D mediante procesamiento de lenguaje natural e imágenes.",
     tools: [
-      { name: "Luma AI (Genie)", description: "Herramienta de vanguardia para la generación de modelos 3D a partir de texto.", link: "https://lumalabs.ai/genie", icon: <LumaIcon /> },
-      { name: "Midjourney", description: "Ideal para generar conceptos visuales e inspiración artística para tus modelos.", link: "https://www.midjourney.com", icon: <MidjourneyIcon /> },
-      { name: "DALL·E 3", description: "Integrado en ChatGPT Plus y Copilot, crea imágenes detalladas a partir de texto.", link: "https://openai.com/dall-e-3", icon: <OpenAiIcon /> },
+      { name: "Luma AI (Genie)", description: "Sistema de generación de geometría 3D a partir de prompts textuales mediante redes neuronales.", link: "https://lumalabs.ai/genie", icon: <LumaIcon /> },
+      { name: "Midjourney", description: "Plataforma de síntesis de imágenes para conceptualización visual en fases de diseño.", link: "https://www.midjourney.com", icon: <MidjourneyIcon /> },
+      { name: "DALL·E 3", description: "Modelo de difusión integrado en ChatGPT Plus para generación de referencias visuales.", link: "https://openai.com/dall-e-3", icon: <OpenAiIcon /> },
     ]
   },
   {
-    category: "Optimización de Impresión 3D",
-    description: "Usa IA para mejorar la orientación de tus modelos y predecir fallos.",
+    category: "Optimización de Procesos de Fabricación",
+    description: "Aplicación de algoritmos de IA para optimización de parámetros de impresión y control de calidad.",
     tools: [
-      { name: "Printables AI", description: "Optimiza la orientación del modelo para minimizar soportes y mejorar la calidad.", link: "https://www.printables.com/es/ai", icon: <PrintablesIcon /> },
-      { name: "OctoPrint Plugins (ML)", description: "Plugins avanzados para monitoreo inteligente y detección de fallos en tiempo real.", link: "https://plugins.octoprint.org/", icon: <OctoPrintIcon /> },
+      { name: "Printables AI", description: "Sistema de optimización automática de orientación y distribución de soportes.", link: "https://www.printables.com/es/ai", icon: <PrintablesIcon /> },
+      { name: "OctoPrint Plugins (ML)", description: "Módulos de monitoreo inteligente y detección de anomalías en tiempo real.", link: "https://plugins.octoprint.org/", icon: <OctoPrintIcon /> },
     ]
   },
   {
-    category: "Reconstrucción y Mejora de Escaneos 3D",
-    description: "Convierte fotos o escaneos del mundo real en modelos 3D detallados.",
+    category: "Reconstrucción Digital y Fotogrametría",
+    description: "Tecnologías de captura y reconstrucción 3D mediante visión computacional.",
     tools: [
-      { name: "Luma AI (Captures)", description: "App móvil para escanear objetos y escenas y convertirlos en modelos 3D.", link: "https://lumalabs.ai/capture", icon: <LumaIcon /> },
-      { name: "Meshroom", description: "Software de fotogrametría de código abierto para crear modelos 3D a partir de fotos.", link: "https://alicevision.org/#meshroom", icon: <MeshroomIcon /> },
+      { name: "Luma AI (Captures)", description: "Aplicación de fotogrametría mediante NeRF para reconstrucción volumétrica.", link: "https://lumalabs.ai/capture", icon: <LumaIcon /> },
+      { name: "Meshroom", description: "Pipeline de fotogrametría de código abierto basado en Structure from Motion.", link: "https://alicevision.org/#meshroom", icon: <MeshroomIcon /> },
     ]
   },
   {
-      category: "Soporte Técnico y Documentación",
-      description: "Asistentes de IA para resolver dudas y generar contenido.",
+      category: "Asistencia Técnica y Documentación",
+      description: "Sistemas de IA conversacional para soporte técnico y generación de documentación.",
       tools: [
-          { name: "ChatGPT", description: "Resuelve dudas técnicas, genera documentación o crea borradores de guiones.", link: "https://chat.openai.com", icon: <OpenAiIcon /> },
-          { name: "Microsoft Copilot", description: "Asistente de IA para investigación, resolución de problemas y generación de contenido.", link: "https://copilot.microsoft.com", icon: <CopilotIcon /> },
+          { name: "ChatGPT", description: "Sistema de procesamiento de lenguaje natural para consultas técnicas y generación de documentación.", link: "https://chat.openai.com", icon: <OpenAiIcon /> },
+          { name: "Microsoft Copilot", description: "Asistente de IA para investigación técnica, análisis de problemas y síntesis de contenido.", link: "https://copilot.microsoft.com", icon: <CopilotIcon /> },
       ]
   }
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
     { 
-        id: 'safety-preparation', 
-        title: 'Colocación de Protección Previo a la Impresión', 
-        description: 'La seguridad es fundamental en la impresión 3D con resina. Aquí se muestra la correcta colocación del equipo de protección personal antes de comenzar el proceso.', 
-        tags: ['Seguridad', 'Preparación', 'EPP'], 
+        id: 'print-parameters', 
+        title: 'Parámetros de Impresión Configurados', 
+        description: 'Documentación de los parámetros técnicos establecidos para el proceso de fabricación digital. Configuración optimizada para el material de resina flexible utilizado.', 
+        tags: ['Parámetros', 'Configuración', 'Documentación'], 
         type: 'image', 
-        src: '/Colocación de protección previo a la Impresión.jpg', 
-        thumbnail: '/Colocación de protección previo a la Impresión.jpg' 
+        src: '/G_Parametros de impresión.jpg', 
+        thumbnail: '/G_Parametros de impresión.jpg' 
     },
     { 
-        id: 'slicer-settings', 
-        title: 'Configuración de la Impresión 3D en Halot Box', 
-        description: 'Ajustando los parámetros críticos en el software Halot Box. La correcta configuración del tiempo de exposición, altura de capa y soportes es clave para una impresión exitosa.', 
-        tags: ['Configuración', 'HalotBox', 'Software', 'Parámetros'], 
+        id: 'flexible-resin', 
+        title: 'Resina Flexible Utilizada en la Impresión', 
+        description: 'Análisis del material utilizado en el proceso de fabricación. Características técnicas de la resina flexible y sus propiedades mecánicas específicas.', 
+        tags: ['Material', 'Resina Flexible', 'Especificaciones'], 
         type: 'image', 
-        src: '/Configuración de la impresión 3D en Halot Box.jpg', 
-        thumbnail: '/Configuración de la impresión 3D en Halot Box.jpg' 
-    },
-    { 
-        id: 'printer-parameters', 
-        title: 'Parámetros Usados en la Impresora', 
-        description: 'Vista detallada de los parámetros optimizados para esta impresión específica. Cada modelo requiere ajustes precisos para obtener la mejor calidad.', 
-        tags: ['Parámetros', 'Configuración', 'Optimización'], 
-        type: 'image', 
-        src: '/Parametros usados en la impresora.jpg', 
-        thumbnail: '/Parametros usados en la impresora.jpg' 
-    },
-    { 
-        id: 'printing-process', 
-        title: 'Proceso de Impresión de la Pieza (Video)', 
-        description: 'Observa el fascinante proceso de impresión capa por capa. La Halot Mage Pro trabajando con precisión milimétrica para crear objetos tridimensionales complejos.', 
-        tags: ['Proceso', 'Impresión', 'Video', 'Tecnología'], 
-        type: 'video', 
-        src: '/Proceso de impresión de la pieza.mp4', 
-        thumbnail: '/Modelo 3D Impreso.jpg' 
-    },
-    { 
-        id: 'printed-model', 
-        title: 'Modelo 3D Impreso', 
-        description: 'El resultado de la impresión 3D recién salido de la impresora. Se puede apreciar la alta calidad y detalle que ofrece la tecnología MSLA de la Halot Mage Pro.', 
-        tags: ['Resultado', 'Calidad', 'Modelo 3D'], 
-        type: 'image', 
-        src: '/Modelo 3D Impreso.jpg', 
-        thumbnail: '/Modelo 3D Impreso.jpg' 
+        src: '/G_Resina Flexible usada en la impresión.jpg', 
+        thumbnail: '/G_Resina Flexible usada en la impresión.jpg' 
     },
     { 
         id: 'centrifuge-process', 
-        title: 'Centrifugado de la Pieza Impresa (Video)', 
-        description: 'Proceso de centrifugado para eliminar el exceso de resina líquida de la pieza recién impresa. Este paso es crucial antes del lavado con alcohol isopropílico.', 
-        tags: ['Post-procesado', 'Centrifugado', 'Video', 'Limpieza'], 
+        title: 'Proceso de Centrifugado Post-Impresión', 
+        description: 'Documentación del proceso de centrifugado para eliminación de exceso de resina líquida. Etapa crítica en el protocolo de post-procesado del prototipo.', 
+        tags: ['Post-procesado', 'Centrifugado', 'Protocolo'], 
         type: 'video', 
-        src: '/Centrifugado de la pieza impresa.mp4', 
-        thumbnail: '/Modelo 3D Impreso Finalizado.jpg' 
+        src: '/G_Centrigudado.mp4', 
+        thumbnail: '/G_P_Producto Final_2.jpg' 
     },
     { 
-        id: 'uv-treatment', 
-        title: 'Tratamiento UV de la Pieza Impresa (Video)', 
-        description: 'Última etapa del post-procesado: curado con luz UV para endurecer completamente la resina y obtener las propiedades mecánicas finales de la pieza.', 
-        tags: ['Curado UV', 'Post-procesado', 'Video', 'Finalización'], 
+        id: 'uv-curing', 
+        title: 'Curación con Rayos UV', 
+        description: 'Proceso de fotopolimerización mediante radiación ultravioleta. Etapa final del protocolo de post-procesado para alcanzar las propiedades mecánicas definitivas.', 
+        tags: ['Curado UV', 'Fotopolimerización', 'Proceso Final'], 
         type: 'video', 
-        src: '/Tratamiento UV de la pieza Impresa.mp4', 
-        thumbnail: '/Modelo 3D Impreso Finalizado.jpg' 
+        src: '/G_Curación con rayos UV.mp4', 
+        thumbnail: '/G_P_Producto Final_3.jpg' 
     },
     { 
-        id: 'final-result', 
-        title: 'Modelo 3D Impreso Finalizado', 
-        description: 'El resultado final después de todo el proceso: impresión, limpieza, centrifugado y curado UV. Una pieza de alta calidad lista para usar.', 
-        tags: ['Resultado Final', 'Alta Calidad', 'Terminado'], 
+        id: 'final-product-video', 
+        title: 'Producto Final - Documentación Audiovisual', 
+        description: 'Registro audiovisual del prototipo completamente procesado. Demostración de las características finales y funcionalidad del objeto fabricado digitalmente.', 
+        tags: ['Producto Final', 'Documentación', 'Validación'], 
+        type: 'video', 
+        src: '/G_Producto Final_1.mp4', 
+        thumbnail: '/G_P_Producto Final_2.jpg' 
+    },
+    { 
+        id: 'final-product-detail-1', 
+        title: 'Producto Final - Vista Detallada 1', 
+        description: 'Documentación fotográfica de alta resolución del prototipo finalizado. Análisis visual de la calidad superficial y precisión dimensional alcanzada.', 
+        tags: ['Producto Final', 'Análisis Visual', 'Calidad'], 
         type: 'image', 
-        src: '/Modelo 3D Impreso Finalizado.jpg', 
-        thumbnail: '/Modelo 3D Impreso Finalizado.jpg' 
+        src: '/G_P_Producto Final_2.jpg', 
+        thumbnail: '/G_P_Producto Final_2.jpg' 
+    },
+    { 
+        id: 'final-product-detail-2', 
+        title: 'Producto Final - Vista Detallada 2', 
+        description: 'Segunda perspectiva del prototipo completado, mostrando detalles específicos de la geometría y acabado superficial obtenido mediante estereolitografía.', 
+        tags: ['Producto Final', 'Geometría', 'Acabado'], 
+        type: 'image', 
+        src: '/G_P_Producto Final_3.jpg', 
+        thumbnail: '/G_P_Producto Final_3.jpg' 
+    },
+    { 
+        id: 'prototype-analysis-1', 
+        title: 'Análisis del Prototipo - Vista 1', 
+        description: 'Documentación del prototipo en fase de validación. Registro fotográfico para análisis dimensional y evaluación de conformidad con especificaciones de diseño.', 
+        tags: ['Prototipo', 'Validación', 'Análisis Dimensional'], 
+        type: 'image', 
+        src: '/G_P_Prototipo_1.jpg', 
+        thumbnail: '/G_P_Prototipo_1.jpg' 
+    },
+    { 
+        id: 'prototype-analysis-2', 
+        title: 'Análisis del Prototipo - Vista 2', 
+        description: 'Perspectiva complementaria del prototipo desarrollado, evidenciando las características técnicas y funcionales del diseño implementado.', 
+        tags: ['Prototipo', 'Características Técnicas', 'Diseño'], 
+        type: 'image', 
+        src: '/G_P_Prototipo_2.jpg', 
+        thumbnail: '/G_P_Prototipo_2.jpg' 
     }
 ];
