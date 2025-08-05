@@ -15,7 +15,7 @@ const FINAL_VIDEOS: VideoItem[] = [
     title: 'Video 1 – Presentación de la herramienta IA',
     description: 'Este video introduce la herramienta de inteligencia artificial seleccionada, explicando qué es, cómo se accede a ella y cuáles son sus principales ventajas. Se contextualiza su utilidad dentro del entorno FabLab, destacando su potencial para facilitar tareas técnicas y creativas.',
     duration: '2–3 minutos',
-    src: '',
+    src: '/Video 1_Proyecto ISR.mp4',
     thumbnail: '/Modelo 3D Impreso Finalizado.jpg'
   },
   {
@@ -30,7 +30,7 @@ const FINAL_VIDEOS: VideoItem[] = [
     title: 'Video 3 – Propuesta de integración futura',
     description: 'Este video presenta una visión a futuro sobre la integración de la herramienta en el FabLab. Se plantean ideas para su implementación continua, buscando fomentar una cultura de mejora constante y adopción tecnológica dentro del espacio de fabricación digital.',
     duration: '2–3 minutos',
-    src: '',
+    src: '/Video 3_Proyecto ISR.mp4',
     thumbnail: '/Configuración de la impresión 3D en Halot Box.jpg'
   }
 ];
